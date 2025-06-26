@@ -26,7 +26,7 @@ export default function Home() {
     try{
 
         let res = await axios.get(`https://api.weatherapi.com/v1/forecast.json?key=c61e800b309848e486f54003252406&q=${Search}&days=3`)
-    console.log(res)
+    console.log(res,"xxxx")
 
     setWeather(res.data.forecast.forecastday)
     setLocation(res.data.location)
